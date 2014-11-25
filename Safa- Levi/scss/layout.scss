@@ -1,0 +1,165 @@
+
+/***********  BORDER BOX SIZING  *************/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/******** RESPONSIVE GRID SYSTEM ********/
+
+/******** 3 COL SECTIONS ********/
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/*  COLUMN SETUP  */
+$medium-size: '(min-width: 551px) and (max-width: 850px)';
+$large-size: '(min-width: 851px)';
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 4%;
+  @media screen and #{$medium-size} {
+    margin: 1% 0 1% 4%;
+  }
+  @media screen and #{$large-size} {
+    margin: 1% 0 1% 4%;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+
+
+/*  GRID OF THREE  */
+@mixin widthL {
+  width: 100%;
+}
+@mixin widthS {
+  width: 48%;
+}
+
+.span_3_of_3 {
+  @include widthL;
+  @media screen and #{$medium-size} {
+    @include widthL;
+  }
+  @media screen and #{$large-size} {
+    @include widthL;
+  }
+}
+
+.span_2_of_3 {
+  @include widthL;
+  @media screen and #{$medium-size} {
+    @include widthL;
+  }
+  @media screen and #{$large-size} {
+    width: 65.33%;
+  }
+}
+
+.span_1_of_3 {
+  @include widthL;
+  @media screen and #{$medium-size} {
+    @include widthS;
+  }
+  @media screen and #{$large-size} {
+    width: 30.66%;
+  }
+}
+
+
+
+
+/******** 2 COL SECTIONS ********/
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 4%;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+  @include widthL;
+  @media screen and #{$medium-size} {
+    @include widthL;
+  }
+  @media screen and #{$large-size} {
+    @include widthL;
+  }
+}
+
+.span_1_of_2 {
+  @include widthL;
+  @media screen and #{$medium-size} {
+    @include widthS;
+  }
+  @media screen and #{$large-size} {
+    @include widthS;
+  }
+}
+
+
+
+

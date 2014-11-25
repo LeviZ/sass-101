@@ -1,0 +1,114 @@
+/***********  BORDER BOX SIZING  *************/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/******** RESPONSIVE GRID SYSTEM ********/
+/******** 3 COL SECTIONS ********/
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 4%; }
+  @media screen and (min-width: 551px) and (max-width: 850px) {
+    .col {
+      margin: 1% 0 1% 4%; } }
+  @media screen and (min-width: 851px) {
+    .col {
+      margin: 1% 0 1% 4%; } }
+  .col:first-child {
+    margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1; }
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+  width: 100%; }
+  @media screen and (min-width: 551px) and (max-width: 850px) {
+    .span_3_of_3 {
+      width: 100%; } }
+  @media screen and (min-width: 851px) {
+    .span_3_of_3 {
+      width: 100%; } }
+
+.span_2_of_3 {
+  width: 100%; }
+  @media screen and (min-width: 551px) and (max-width: 850px) {
+    .span_2_of_3 {
+      width: 100%; } }
+  @media screen and (min-width: 851px) {
+    .span_2_of_3 {
+      width: 65.33%; } }
+
+.span_1_of_3 {
+  width: 100%; }
+  @media screen and (min-width: 551px) and (max-width: 850px) {
+    .span_1_of_3 {
+      width: 48%; } }
+  @media screen and (min-width: 851px) {
+    .span_1_of_3 {
+      width: 30.66%; } }
+
+/******** 2 COL SECTIONS ********/
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 4%; }
+  .col:first-child {
+    margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1; }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+  width: 100%; }
+  @media screen and (min-width: 551px) and (max-width: 850px) {
+    .span_2_of_2 {
+      width: 100%; } }
+  @media screen and (min-width: 851px) {
+    .span_2_of_2 {
+      width: 100%; } }
+
+.span_1_of_2 {
+  width: 100%; }
+  @media screen and (min-width: 551px) and (max-width: 850px) {
+    .span_1_of_2 {
+      width: 48%; } }
+  @media screen and (min-width: 851px) {
+    .span_1_of_2 {
+      width: 48%; } }
