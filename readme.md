@@ -1,71 +1,28 @@
-# UXE - Sass 101
+#Responsive and Assets
 
-- Getting through this week we will be 100% using Sass. CSS is now dead to us. To make this transition, you need to complete the following tasks:
-  - Get Sass installed, either the Ruby or C version.
-  - Be able to run Sass and process to CSS
-  - Choose a project that we will start converting to Sass
-  - Review all exercises [http://coderecipez.roughdraft.io/](http://coderecipez.roughdraft.io/)
+1- Implemented **Responsive Grid System** and **Flexbox** was used for modules.
 
-- To turn in this assignment:
-  - Clone the repo and place project you will convert to Sass inside
+Flexbox Notes: Flexbox was added only to the `.modal_album` module. As for IE, even if flexbox does not work, page will display original order of items.
 
 
-## Submitting assignments
 
-Submitting assignments for this course will require leveraging some of the more advanced features of Github. These features will not only improve your knowledge of Git and Github, but also provide practice exercises for working on a distributed project with a large team.
+2- **Media Queries** 3 breakpoints were made with mobile-first media queries. 
 
-## How to submit an assignment
+- The mobile default shows items in a single column at full width 
+- The middle breakpoint shows items in 2 columns
+- The large layout has a mix of 3 and 2 column sections
 
-In order to submit assignments, please use the following steps
+3- **Responsive Images** 
 
-1. [Fork this repo][1] so that you have a working version
-1. [Clone the forked repo][2] to your local computer
-1. Create a folder named with your name, example `dale-sande`
-1. Once completed with your assignment, commit code to the master branch and push to Github `git push origin master`
-1. From __your fork__ of the project, initiate a pull request to the parent repo
+- Replaced the "Find" buttons with icons using Ico-moon. 
+- Set the backround image to an SVG. This doesn't have real benefit in this context but we got experience toying around with SVG data code and DUI data.
+- All images are set to a percantage based width for responsiveness in space
 
-## Assignment review
-
-When a pull request is initiated, I will be notified of the update and comment on the submitted assignment via Github tools.
-
-## Keeping your local repo up to date
-Your local repo will be an independent version of the original repo from the moment you fork the repo. In order to keep your local repo up to date with the original repo, you need to do what is called an [upstream pull][3].
-
-To manage an upstream pull, I suggest updating your `.bash_profile` and your `.gitconfig` file with easy to remember aliases.
-
-### .bash_profile
-
-In your `.bash_profile` add the following alias
-
-```
-alias upstream="git remote add upstream \$@"
-```
-
-From the command line you simply need to refer to the alias and add the path to the upstream repo as shown in the following example.
-
-```
-$ upstream https://github.com/blackfalcon/unicorn-class-css-section.git
-```
-
-Once the upstream repo is configured for your local repo, this never needs to be reset again, unless you delete your local repo.
-
-### .gitconfig
-In your `.gitconfig` add the following alias
-
-```
-[alias]
-  pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
-```
-
-From the command line, within the project repo, enter the following command to pull latest code from the upstream master.
-
-```
-git pu
-```
+4- **Modernizr** Modernizr was added to use a fallback png for the background svg. This is for IE8.
 
 
 
 
-[1]:https://help.github.com/articles/fork-a-repo
-[2]:https://help.github.com/articles/fork-a-repo#step-2-clone-your-fork
-[3]:https://help.github.com/articles/syncing-a-fork
+
+#####   *Added a separate stylesheet for all media queries*
+

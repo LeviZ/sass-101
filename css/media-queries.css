@@ -1,0 +1,60 @@
+/***********  MEDIA QUERIES  *************/
+
+/*  GO FULL WIDTH AT LESS THAN 850 PIXELS */
+
+
+@media only screen and (min-width: 551px) and (max-width: 850px) {
+  .col {
+    margin: 1% 0 1% 4%;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 850px) {
+  .modal-album-2col {
+    margin: 0;
+  }
+  .span_2_of_2 {
+    width: 100%;
+  }
+  .span_1_of_2 {
+    width: 48%;
+  }
+  .span_3_of_3 {
+    width: 100%;
+  }
+  .span_2_of_3 {
+    width: 100%;
+  }
+  .span_1_of_3 {
+    width: 48%;
+  }
+}
+
+
+@media only screen and (min-width: 851px) {
+  .col {
+    margin: 1% 0 1% 4%;
+  }
+}
+
+@media only screen and (min-width: 851px) {
+  .modal-album-2col {
+    margin: 0 20%;
+  }
+  .span_2_of_2 {
+    width: 100%;
+  }
+  .span_1_of_2 {
+    width: 48%;
+  }
+  .span_3_of_3 {
+    width: 100%;
+  }
+  .span_2_of_3 {
+    width: 65.33%;
+  }
+  .span_1_of_3 {
+    width: 30.66%;
+}
+}
+

@@ -1,0 +1,39 @@
+/******* ico-font ********/
+
+@font-face {
+	font-family: 'ico-fonts';
+	src:url('fonts/ico-fonts.eot?-8sfmks');
+	src:url('fonts/ico-fonts.eot?#iefix-8sfmks') format('embedded-opentype'),
+		url('fonts/ico-fonts.woff?-8sfmks') format('woff'),
+		url('fonts/ico-fonts.ttf?-8sfmks') format('truetype'),
+		url('fonts/ico-fonts.svg?-8sfmks#ico-fonts') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'ico-fonts';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pushpin:before {
+	content: "\e600";
+}
+.icon-binoculars:before {
+	content: "\e601";
+}
+.icon-search:before {
+	content: "\e602";
+}
+
+
+
