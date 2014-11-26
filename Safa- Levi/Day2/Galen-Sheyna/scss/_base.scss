@@ -1,5 +1,4 @@
 
-
 /*Base Styles*/
 
 * {
@@ -26,9 +25,12 @@ img {
 a {
   text-decoration: none;
   color: MediumOrchid;
+  &:hover, &:visted {
+    color: #8a2aa2;
+  }
 }
 
-a:hover,
-a:visited {
-  color: #8a2aa2;
-}
+// a:hover,
+// a:visited {
+//   color: #8a2aa2;
+// }
