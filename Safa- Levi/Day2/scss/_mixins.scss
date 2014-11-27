@@ -1,0 +1,7 @@
+// MEDIA QUERY MIXINS
+
+@mixin mobile {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
